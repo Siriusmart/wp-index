@@ -26,7 +26,7 @@ class IndexProcessor extends webpan.Processor {
                 for (const proc of procSet.values()) {
                     let res = await proc.getResult();
                     res.files.values().filter(s => path.basename(s) === "index.html")
-                        .map(s => escape(s.substring(this.filePath().length)))
+                        .map(s => escape(s.slice(this.filePath().length, -10)))
                         .forEach(s => files.add(s));
                 }
             }
