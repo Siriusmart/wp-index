@@ -1,6 +1,6 @@
 {
     "name": "wp-index",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Folder index page generator for webpan.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -20,11 +20,11 @@
     },
     "homepage": "https://github.com/siriusmart/wp-index#readme",
     "devDependencies": {
-        "@types/node": "^24.4.0",
-        "@types/escape-html": "^1.0.4"
+        "@types/escape-html": "^1.0.4",
+        "@types/node": "^24.10.9"
     },
     "dependencies": {
-        "webpan": "*",
-        "escape-html": "^1.0.3"
+        "escape-html": "^1.0.3",
+        "webpan": "*"
     }
 }

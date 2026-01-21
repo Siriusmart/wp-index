@@ -56,7 +56,7 @@ ${Array.from(files)
 </html>`
 
         return {
-            relative: new Map([[path.join(this.filePath(), "index.html"), html]]),
+            relative: new Map([[path.join(this.filePath(), "index.html"), { buffer: html, priority: this.__handle.meta.settings.priority ?? -100 }]]),
         }
     }
 
