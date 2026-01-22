@@ -1,6 +1,6 @@
 {
     "name": "wp-index",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Folder index page generator for webpan.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",

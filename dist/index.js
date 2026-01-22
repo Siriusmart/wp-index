@@ -31,6 +31,7 @@ class IndexProcessor extends webpan.Processor {
                 }
             }
         }
+        files = files.difference(new Set(this.settings().exclude ?? ["index.html"]));
         let html = `<!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -54,7 +55,7 @@ ${Array.from(files)
         };
     }
     shouldRebuild(newFiles) {
-        return newFiles.files({ include: path.join(this.filePath(), "**") }).size !== 0;
+        return newFiles.files({ include: path.join(this.filePath(), "*") }).size !== 0;
     }
 }
 exports.default = IndexProcessor;
